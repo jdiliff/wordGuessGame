@@ -51,8 +51,10 @@
             // for loop
             for (var i = 0; i < word.length; i++) {
                 answerArray[i] = " _ ";
+        
             }
 
+            console.log(answerArray);
            //create a variable for the remaining letters. It will decrease as letters are guessed 
             var remainingLetters = (word.length);
 
@@ -61,7 +63,8 @@
             while (remainingLetters > 0) {
 
             //convert the blanks to text using the div created in the html 
-            $("#blanks").text(answerArray);
+            $("#blanks").text(answerArray.join("")); 
+    
                 
             
             
